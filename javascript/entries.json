@@ -1,0 +1,18 @@
+{
+    "boat": [
+        {
+            "name": "John Doe",
+            "email": "john.doe@example.com",
+            "club": "Portaferry",
+            "password": "pcrc",
+            "races":[
+                {
+                    "race1": true
+                },
+                {
+                    "race2": false
+                }
+            ]
+        }
+    ]
+}
