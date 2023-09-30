@@ -76,7 +76,7 @@ function populate() {
 
 function getBoatNames()
 {   
-    $.getJSON("./lib/examples/employee.json", function (data) {
+    $.getJSON("entries.json", function (data) {
       console.log(data);
     })
 }
