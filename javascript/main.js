@@ -76,9 +76,14 @@ function populate() {
 
 function getBoatNames()
 {   
-    $.getJSON("entries.json", function (data) {
-      console.log(data);
-    })
+    const myBlogs = ["https://catalins.tech", "https://exampleblog.com"];
+    localStorage.setItem('links', JSON.stringify(myBlogs));
+}
+
+function setData()
+{
+    const myBlogs = ["https://catalins.tech", "https://exampleblog.com"];
+    localStorage.setItem('links', JSON.stringify(myBlogs));
 }
 
 window.onload = populate;
