@@ -1,128 +1,216 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Exo+2:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+box-sizing: border-box;
+margin:0;
+}
+body{
+    background-color: rgb(177, 177, 177);
+    font-family: 'Open Sans', sans-serif;
+    position:relative;
+    font-size:2em;
+    
 }
 
-* {
-    box-sizing: border-box;
+h1,h2{
+    font-family: 'Exo 2', sans-serif;
 }
-
-/* Full-width input fields */
-input[type=text],
-input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-}
-
-/* Add a background color when the inputs get focus */
-input[type=text]:focus,
-input[type=password]:focus {
-    background-color: #ddd;
-    outline: none;
-}
-
-/* Set a style for all buttons */
-button {
-    background-color: #04AA6D;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.9;
-}
-
-button:hover {
-    opacity: 1;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn,
-.signupbtn {
-    float: left;
-    width: 50%;
-}
-
-/* Add padding to container elements */
-.container {
-    padding: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
+#wrapper{
+    background-color: rgb(233, 233, 233);
+    width: 90%;
+    margin: 30px auto;
     overflow: auto;
-    /* Enable scroll if needed */
-    background-color: #474e5d;
-    padding-top: 50px;
+}
+#head{
+    position: sticky;
+    top:0;                                               
+    background-color: rgb(143, 18, 18);                
+    color: white;                
+    text-align: right;
+    width: 90%;  
+    margin: auto;   
+    overflow:auto;    
+    z-index : 10;   
 }
 
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto 15% auto;
-    /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 80%;
-    /* Could be more or less, depending on screen size */
+#headLogo{
+    float:left;
+    padding:.2em;
+}
+#headText{    
+    float:right;            
+    padding:0em 1em .1em 0em
 }
 
-/* Style the horizontal ruler */
-hr {
-    border: 1px solid #f1f1f1;
-    margin-bottom: 25px;
+#title{
+    text-align:center;
+    text-decoration: underline;
+    padding:1em;
 }
 
-/* The Close Button (x) */
-.close {
-    position: absolute;
-    right: 35px;
-    top: 15px;
-    font-size: 40px;
+.row{
+    overflow: auto;
+    clear:both;                
+}
+
+.col{
+    width: 50%;
+    float: left; 
+    text-align: center;
+    margin:auto; 
+}
+
+.leftcol{
+    width: 30%;
+    float: left; 
+    text-align: center;
+    margin:auto; 
+    overflow: auto;                          
+}
+
+.rightcol{
+    width: 70%;
+    float: left; 
+    text-align: center;
+    margin:auto; 
+    overflow: auto;            
+}
+
+
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border:0.2em solid black;
+    border-radius:1em;   
+    height:auto;
+    overflow:auto;
+    
+}
+
+.text{
+    clear:both;
+    padding:1em;
+    vertical-align: middle;
+    overflow:auto;
+    
+}
+
+a{
+    color:black;
+    text-decoration: underline;
     font-weight: bold;
-    color: #f1f1f1;
-    color: #f18a8a6a;
+    text-decoration-color: rgb(143,18,18);
 }
 
-.close:hover,
-.close:focus {
-    color: #f44336;
-    cursor: pointer;
+a:hover{
+    background-color: rgba(23, 24, 36, 0.8);
+    border:0.1em solid rgba(23, 24, 36, 0.8);
+    border-radius: 1em;
+    text-decoration:none;
 }
 
-/* Clear floats */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+#footer{
+    clear:both;
+    padding:1em;
+    border-top:.2em solid black;
+    border-bottom: .2em solid black;
+    background-color: rgb(143, 18, 18);
+    width:100%;
+    color:white;
+    margin:auto;
+    text-align: center;
+    font-size:.5em;
 }
 
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
+#logo{
+    border: none;
+    border-radius:0em;
+    width:150px;
+    height:auto;
+}
 
-    .cancelbtn,
-    .signupbtn {
-        width: 100%;
+#nav ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(143,18,18);
+    width:90%;
+  }
+  
+#nav li {
+    float: left;
+  }
+  
+#nav li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+#nav li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(23, 24, 36, 0.8);
+    /*position: relative;*/
+  }
+  
+#nav li.dropdown {
+    display: inline-block;
+  }
+  
+#nav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:  rgba(23, 24, 36, 0.8);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+#nav .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+#nav .dropdown-content a:hover {background-color: rgb(31, 33, 49);}
+  
+#nav .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+@media screen and (max-width: 800px) {
+    .leftcol, .rightcol, .col{
+        display: block;
+        width:100%
+    }
+
+    #wrapper, #nav ul{
+        width:100%;
+    }
+
+    #head {
+        width:100%;
+        font-size:0.5em;
+        padding:0em;
+    }
+    #nav li{
+        font-size:0.5em;
+        padding:0em;
+    }
+
+    #logo{
+        width: 70px;
+    }
+
+    #image{
+        width:75%;
+        height:auto;
     }
 }
